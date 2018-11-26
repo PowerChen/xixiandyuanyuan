@@ -8,12 +8,14 @@ package main
 
 import (
 	"fmt"
+	"threeoptions"
 	"twonums"
 )
 
 func main() {
-	fmt.Println("Hello XiXi and YuanYuan")
+	fmt.Println("Hello XiXi and YuanYuan, Let's Player Gmaes!")
 	twonums.Twonums()
+	threeoptions.ThreeOptions()
 
 }
 
