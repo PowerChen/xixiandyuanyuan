@@ -1,2 +1,2 @@
 # xixiandyuanyuan
-this project was write for xixi and yuanyuan 
+this application writed for xixi and yuanyuan 
