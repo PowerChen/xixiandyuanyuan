@@ -7,9 +7,20 @@ game ruler:
 */
 package twonums
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 func Twonums() bool {
 	fmt.Println("Ok XiXi and YuanYuan Now Play twonums Game")
 	return true
+}
+
+//! Test
+func TestTwonums(t testing.T) {
+	if !Twonums() {
+		t.Log("no pass the test")
+		t.Fail()
+	}
 }

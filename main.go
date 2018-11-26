@@ -8,8 +8,9 @@ package main
 
 import (
 	"fmt"
-	"threeoptions"
-	"twonums"
+	"testing"
+	"xixiandyuanyuan/models/threeoptions"
+	"xixiandyuanyuan/models/twonums"
 )
 
 func main() {
@@ -19,7 +20,19 @@ func main() {
 
 }
 
+func Even(n int) bool {
+	if n%2 == 0 {
+		return true
+	}
+	return false
+}
+
 //! Test Func
-func TestMain() {
+func TestEven(t testing.T) {
 	fmt.Println("ok you passed the Test!")
+	if !Even(3) {
+		t.Log(" no pass test")
+		t.Fail()
+	}
+	return
 }
