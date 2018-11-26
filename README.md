@@ -1,2 +1,3 @@
 # xixiandyuanyuan
-this application writed for xixi and yuanyuan 
+some game for XiXi and YuanYuan
+have fun!
