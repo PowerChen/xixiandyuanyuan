@@ -17,7 +17,7 @@ func ThreeOptions() bool {
 }
 
 //! Test
-func TestThreeOptions(t testing.T) {
+func TestThreeOptions(t *testing.T) {
 	if !ThreeOptions() {
 		t.Log("no pass the test")
 		t.Fail()
