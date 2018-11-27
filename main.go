@@ -8,6 +8,7 @@ package main
 
 import (
 	"fmt"
+	"xixiandyuanyuan/models/concurrent"
 	"xixiandyuanyuan/models/threeoptions"
 	"xixiandyuanyuan/models/twonums"
 )
@@ -17,11 +18,12 @@ func main() {
 	twonums.Twonums()
 	threeoptions.ThreeOptions()
 
-}
+	calacList := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	myresult := make(chan int, 2)
+	go concurrent.Sum(calacList[:len(calacList)/2], myresult)
+	go concurrent.Sum(calacList[len(calacList)/2:], myresult)
 
-func Even(n int) bool {
-	if n%2 == 0 {
-		return true
-	}
-	return false
+	sum1, sum2 := <-myresult, <-myresult
+
+	fmt.Println("result:", sum1, sum2, sum1+sum2)
 }
