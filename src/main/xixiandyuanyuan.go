@@ -8,9 +8,9 @@ package main
 
 import (
 	"fmt"
-	"xixiandyuanyuan/models/concurrent"
-	"xixiandyuanyuan/models/threeoptions"
-	"xixiandyuanyuan/models/twonums"
+	"models/concurrent"
+	"models/threeoptions"
+	"models/twonums"
 )
 
 func main() {

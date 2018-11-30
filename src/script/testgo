@@ -1,0 +1,4 @@
+go test ../models/concurrent
+go test ../models/threeoptions
+go test ../models/twonums
+
