@@ -1,4 +1,1 @@
-go test ../models/concurrent
-go test ../models/threeoptions
-go test ../models/twonums
-
+go test -bench=. -benchmem ../models/concurrent  ../models/threeoptions ../models/twonums
